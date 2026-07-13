@@ -175,7 +175,86 @@ a{
  }
 
 
- @media (width > 768px){
+ .header{
+    margin-top:5rem;
+    padding-inline:1rem;
+    position:relative;
+    isolation:isolate;
+    overflow:hidden;
+
+    
+ }
+
+
+ .header::before{
+    position:absolute;
+    content:"";
+    height:100%;
+    width:calc(100% - 2rem);
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQim28_aq_JMDSuNuS6zoFfTfBevONXAfvxWNkueAJh_lbLK-qEy6SfphQ&s=10");
+    background-position:center center;
+    background-size:cover;
+    border-radius:3rem;
+    z-index:-1;
+
+
+ }
+ .hcon{
+    display:grid;
+ }
+
+ .hc{
+    padding:4rem 1rem;
+ }
+
+ .hc p{
+    margin-bottom:5px;
+    font-size:1rem;
+    font-weight:600;
+    color:var(--text-dark);
+    text-align:center;
+ }
+
+.hb{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:1rem;
+
+
+}
+
+
+     .hb .btn{
+        padding:1rem 2rem;
+     }
+
+  .hb a{
+    padding:9px 13px;
+    font-size:1.5rem;
+    color:var(--primary-color);
+    background-color:var(--white);
+    border-radius:100%;
+  }   
+
+
+  .hb a:hover{
+    color:var(--white);
+    background-color:var(--primary-color);
+  }
+
+
+ .hc h1{
+    margin-bottom:2rem;
+    font-size:4.5rem;
+    font-weight:600;
+ }
+
+
+ @media (width > 760px){
 
 
     nav{
@@ -236,6 +315,49 @@ color:var(--text-dark);
     padding: 0.75rem 2rem;
     background-color:var(--text-dark);
 }
+header{
+    margin-top:0;
+
+ }
+ .hc{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) repeat(5, minmax(0, calc(var(--max-width) /5))) minmax(0,1fr);
+ }
+ .hc{
+    grid-column:2/4;
+    padding-block:8rem;
+ }
+ .hc :is(p, h1){
+    text-align:center;
+ }
+ .hb{
+    justify-content:flex-start;
+ }
 
 
+
+     .himg{
+        grid-column:4/8;
+        position:relative;
+        isolation:isolate;
+        height:100%;
+     }
+
+
+  .himg img{
+    position:absolute;
+    top:-40rem;
+    left:0;
+    height:100%;
+    width:unset;
+    
+  }  
+  .himg img{
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+} 
  }
