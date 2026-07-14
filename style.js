@@ -43,3 +43,7 @@ ScrollReveal().reveal(".hb",{
 
 });
 
+    ScrollReveal().reveal(".descard",{
+        ...scrollRevealOption,
+        interval:500,
+    })
