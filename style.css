@@ -574,7 +574,102 @@ color:var(--primary-color);
     .cd:hover h5{
         color:var(--extra-light)
     }
+
+    .footer{
+        background-color:var(--extra-light);
+    }
+
+    .fotcon{
+        display:grid;
+        gap:4rem 2rem;
+    }
+
+    .footercol p{
+        max-width:300px;
+        margin-block:2rem;
+        color:var(--text-light);
+    }
+
+    .fotsoc{
+        display:flex;
+        align-items:center;
+        gap:1rem;
+        flex-wrap:wrap;
+    }
+
+    .fotsoc a{
+        display:inline-block;
+        padding:7px 10px;
+        font-size:1.25rem;
+        color:var(--white);
+        background-color:var(--primary-color);
+        border-radius:100%;
+    }
+
+        .fotsoc a:hover{
+            background-color:var(--primary-color-dark);
+        }
       
+
+            .footercol h4{
+                margin-bottom:2rem;
+                font-size:1.2rem;
+                font-weight:600;
+                color:var(--text-dark);
+            }     
+
+            .fl{
+                display:grid;
+                gap:1rem;
+
+            }
+            .fl a{
+display:flex;
+align-items:Center;
+gap:10px;
+color:var(--text-light);                
+            }
+
+           
+            
+         .fl a:hover{
+            color:var(--primary-color);
+         }   
+         .fl a span{
+            font-size:1.25rem;
+         }
+
+         .footercol form{
+            display:grid;
+            gap:1rem;
+         }
+         .footercol input{
+            padding:.75rem;
+            font-size:1rem;
+            color:var(--text-dark);
+            background-color:var(--white);
+            border:1px solid var(--text-light);
+            border-radius:5px;
+
+         }
+
+         .footercol input::placeholder{
+            color:var(--text-light)
+         }
+
+              .footercol .btn{
+                border-radius:5px;
+              }
+
+
+.footerb{
+    padding:1rem;
+    font-size:.9rem;
+    color:var(--text-light);
+    text-align:center;
+}
+
+
 @media (width > 540px){
     .desgrid{
         grid-template-columns: repeat(2, 1fr);
@@ -597,6 +692,9 @@ color:var(--primary-color);
     grid-template-columns:repeat(2,1fr);
 }
 
+.fotcon{
+    grid-template-columns: repeat(2,1fr);
+}
 }
 
 
