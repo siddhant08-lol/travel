@@ -47,3 +47,40 @@ ScrollReveal().reveal(".hb",{
         ...scrollRevealOption,
         interval:500,
     })
+
+ScrollReveal().reveal(".simg img",{
+    ...scrollRevealOption,
+    origin: "left",
+});
+
+ScrollReveal().reveal(".sc h4",{
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+    ScrollReveal().reveal(".sc p",{
+        ...scrollRevealOption,
+        delay:1000,
+    });
+
+       ScrollReveal().reveal(".cb",{
+        ...scrollRevealOption,
+        delay:1500,
+       });
+
+       ScrollReveal().reveal(".bc",{
+        ...scrollRevealOption,
+        interval:500,
+       });
+
+       ScrollReveal().reveal(".bc",{
+        ...scrollRevealOption,
+        interval:500,
+       });
+
+       const swiper = new Swiper(".swiper",{
+        slidesPerView: 3,
+        spaceBetween: 20,
+        loop:true,
+       });
+        
